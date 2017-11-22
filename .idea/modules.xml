@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NapiWorker.iml" filepath="$PROJECT_DIR$/.idea/modules/NapiWorker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NapiWorker_main.iml" filepath="$PROJECT_DIR$/.idea/modules/NapiWorker_main.iml" group="NapiWorker" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NapiWorker_test.iml" filepath="$PROJECT_DIR$/.idea/modules/NapiWorker_test.iml" group="NapiWorker" />
+    </modules>
+  </component>
+</project>
