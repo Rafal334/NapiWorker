@@ -1,7 +1,6 @@
 package com.rafal.fixer;
 
 import java.io.*;
-import java.nio.charset.MalformedInputException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
@@ -11,9 +10,9 @@ import java.util.stream.Stream;
 
 public class TextFixer {
 
-    Stream<String> fileStream;
-    HashMap<String, String> replaceMap;
-    String fixedText;
+    private Stream<String> fileStream;
+    private HashMap<String, String> replaceMap;
+    private String fixedText;
 
     public TextFixer() {
         replaceMap = new HashMap<>();
@@ -35,7 +34,7 @@ public class TextFixer {
         fixedText = fileStream.map(this::replaceChars).collect(Collectors.joining());
     }
 
-    public void saveFixedFile(String absolutePath) throws FileNotFoundException{
+    public void saveFixedFile(String absolutePath) throws FileNotFoundException {
         PrintWriter out = new PrintWriter(absolutePath);
         out.print(fixedText);
         out.close();
