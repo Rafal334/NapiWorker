@@ -9,7 +9,7 @@ public class Runner {
 
         TextFixer fixer = new TextFixer();
         try {
-            fixer.openFile("D:\\test2.txt");
+            fixer.openFile("D:\\napisy.txt");
             fixer.fixeText();
             fixer.saveFixedFile("D:\\napisyFIXED.txt");
         } catch (IOException e) {
